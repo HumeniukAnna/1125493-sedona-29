@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анна Гуменюк](https://up.htmlacademy.ru/htmlcss/29/user/1125493).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Приходкин](https://htmlacademy.ru/profile/prikhodkin).
 
 ---
 
