@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
 
@@ -20,7 +23,7 @@
   </nav>
 </header>
 <main class="container">
-  <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+  <h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
   <section class="features">
     <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
     <ul class="features-list">
@@ -52,7 +55,6 @@
     </ul>
   </section>
   <section class="recommendations">
-    <h2>Рекомендации</h2>
     <ul class="recommendations-list">
       <li class="recommendations-item">
         <h3>ЖИЛЬЁ</h3>
@@ -71,29 +73,32 @@
   <section class="find">
     <h3>ЗАИНТЕРЕСОВАЛИСЬ?</h3>
     <p class="find-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <a href="#">поиск гостиницы в седоне</a>
+    <div class="find-form">
+      <a class="find-hotel" href="#">поиск гостиницы в седоне</a>
+      <a class="button-search" href="#">найти</a>
+    </div>
     <!--ЗДЕСЬ БУДЕТ ФОРМА ПОИСКА ГОСТИНИЦЫ-->
   </section>
   <section class="map">
     <!--ЗДЕСЬ ДОЛЖНА БЫТЬ КАРТА ИЛИ КАРТИНКА КАРТЫ-->
   </section>
 </main>
-<footer class="page-footer main-footer">
+<footer class="page-footer">
   <section class="footer-phone">
     <h2>#VISITSEDONA</h2>
-    <a class="" href="tel:+74956660166">ТЕЛ:+7(495)666-01-66</a>
+    <a class="" href="tel:+74956660166">ТЕЛ:+7(495) 666-01-66</a>
   </section>
-    <ul class="footer-social-list">
-      <li>
-        <a href="#">Twitter</a>
-      </li>
-      <li>
-        <a href="#">Facebook</a>
-      </li>
-      <li>
-        <a href="#">YouTube</a>
-      </li>
-    </ul>
+  <ul class="footer-social-list">
+    <li>
+      <a href="#">Twitter</a>
+    </li>
+    <li>
+      <a href="#">Facebook</a>
+    </li>
+    <li>
+      <a href="#">YouTube</a>
+    </li>
+  </ul>
   <p class="footer-copyright">
     Website by
     <a href="https://htmlacademy.ru">HTML Academy</a>
