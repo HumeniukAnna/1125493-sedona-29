@@ -177,30 +177,35 @@ img {
 
 /*User navigation*/
 .site-navigation a:hover,
-.footer-copyright a:hover {
+.site-navigation a:focus,
+.footer-copyright a:hover,
+.footer-copyright a:focus {
   color: var(--basic-blue);
 }
 
-.site-navigation a:focus,
-.footer-copyright a:focus {
+.site-navigation a:active,
+.footer-copyright a:active {
   color: var(--basic-grey-light);
 }
 
-.find-hotel:hover {
+.find-hotel:hover,
+.find-hotel:focus {
   background-color: var(--basic-brown);
 }
 
-.find-hotel:focus {
+.find-hotel:active {
   background-color: var(--basic-brown-dark);
 }
 
 .footer-social-list a:hover,
-.button-search:hover {
+.footer-social-list a:focus,
+.button-search:hover,
+.button-search:focus {
   background-color: var(--basic-blue-dark);
 }
 
-.footer-social-list a:focus,
-.button-search:focus {
+.footer-social-list a:active,
+.button-search:active {
   background-color: var(--basic-blue-extra-dark);
 }
 
