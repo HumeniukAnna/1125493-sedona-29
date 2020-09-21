@@ -5,6 +5,7 @@
   --basic-black-light: #231F20;
   --basic-grey: #333333;
   --basic-grey-light: #F2F2F2;
+  --basic-grey-medium: #666666;
   --basic-grey-dark: #EEEEEE;
   --basic-white: #FFFFFF;
   --basic-white-light: rgba(255, 255, 255, 0.9);
@@ -137,18 +138,65 @@ img {
   font-weight: 700;
 }
 
-.find-hotel {
+.find-hotel,
+.hotel-book {
   background-color: var(--basic-brown-light);
 }
 
-.button-search {
+.button-search,
+.hotel-info {
   background-color: var(--basic-blue);
 }
 
 .find-hotel,
-.button-search {
+.button-search,
+.hotel-book,
+.hotel-info {
   color: var(--basic-white);
 }
+
+/*Hotels*/
+/*search-results-sorting*/
+.found {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+  font-weight: 700;
+}
+
+.sorting-item {
+  font-size: 12px;
+  line-height: 18px;
+  color: inherit;
+  font-weight: 400;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.hotel-item {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+  font-weight: 700;
+}
+
+.hotels-list {
+  list-style: none;
+}
+
+.hotels-list p {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-grey);
+}
+
+.hotel-rating {
+  color: var(--basic-grey-medium);
+  background-color: var(--basic-grey-light);
+}
+
 
 /* Footer */
 
@@ -179,7 +227,9 @@ img {
 .site-navigation a:hover,
 .site-navigation a:focus,
 .footer-copyright a:hover,
-.footer-copyright a:focus {
+.footer-copyright a:focus,
+.hotel-item:hover,
+.hotel-item:focus {
   color: var(--basic-blue);
 }
 
@@ -189,10 +239,13 @@ img {
 }
 
 .find-hotel:hover,
-.find-hotel:focus {
+.find-hotel:focus,
+.hotel-book:focus,
+.hotel-book:hover {
   background-color: var(--basic-brown);
 }
 
+/*hotel-book:active?*/
 .find-hotel:active {
   background-color: var(--basic-brown-dark);
 }
@@ -200,12 +253,15 @@ img {
 .footer-social-list a:hover,
 .footer-social-list a:focus,
 .button-search:hover,
-.button-search:focus {
+.button-search:focus,
+.hotel-info:hover,
+.hotel-info:focus {
   background-color: var(--basic-blue-dark);
 }
 
 .footer-social-list a:active,
-.button-search:active {
+.button-search:active,
+.hotel-info:active {
   background-color: var(--basic-blue-extra-dark);
 }
 
