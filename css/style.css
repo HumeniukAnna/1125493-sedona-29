@@ -51,6 +51,33 @@ img {
   text-align: center;
 }
 
+/*Grid*/
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/*для грида*/
+.main-header {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.main-header-logo {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+  grid-column: 3 / 4;
+  z-index: 1;
+}
+
+
 /* main navigation*/
 
 .main-navigation {
@@ -58,11 +85,17 @@ img {
   line-height: 26px;
   color: var(--basic-black);
   background-color: transparent;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+
 }
 
 .site-navigation {
   list-style: none;
   font-weight: 700;
+  outline: 5px solid rgba(0, 0, 255, 0.3);
+  outline-offset: -5px;
+  grid-column: 1 / -1;
 }
 
 .site-navigation a {
