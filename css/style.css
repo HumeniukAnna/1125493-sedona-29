@@ -65,18 +65,12 @@ img {
 }
 
 /*для грида*/
-.main-header {
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
-}
 
 .main-header-logo {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
-  grid-column: 3 / 4;
-  z-index: 1;
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
 }
-
 
 /* main navigation*/
 
@@ -85,21 +79,48 @@ img {
   line-height: 26px;
   color: var(--basic-black);
   background-color: transparent;
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px;
-
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .site-navigation {
   list-style: none;
   font-weight: 700;
-  outline: 5px solid rgba(0, 0, 255, 0.3);
-  outline-offset: -5px;
-  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.site-navigation li {
+  width: 200px;
+  text-align: center;
+}
+
+.site-navigation li:nth-child(3n) {
+  margin-left: auto;
+}
+
 
 .site-navigation a {
   color: var(--basic-black);
+}
+
+/*background-image*/
+
+.background-welcome {
+  margin-top: 77px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 1;
+}
+
+/*Container*/
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 /* Features */
@@ -112,11 +133,13 @@ img {
 
 .features-list {
   list-style: none;
+
 }
 
 .feature-item {
   text-align: center;
 }
+
 
 .feature-item h3 {
   font-size: 21px;
@@ -139,11 +162,30 @@ img {
   background-color: var(--basic-grey-dark);
 }
 
+.reason1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.reason1:first-child {
+  justify-content: flex-start;
+  flex-grow: 0;
+}
+
+.reason1:last-child {
+  justify-content: flex-end;
+  flex-grow: 1;
+}
 
 /* Recommendations */
 
 .recommendations-list {
   list-style: none;
+  vertical-align: bottom;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 256px;
 }
 
 .recommendations-item {
@@ -154,6 +196,7 @@ img {
   font-size: 21px;
   line-height: 21px;
 }
+
 
 /* find-hotel*/
 .find {
@@ -236,7 +279,10 @@ img {
 .page-footer {
   background-color: var(--basic-white-light);
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
+
 
 .footer-phone {
   font-weight: 700;
@@ -254,6 +300,11 @@ img {
 .footer-social-list a {
   color: var(--basic-white);
   background-color: var(--basic-blue);
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*User navigation*/

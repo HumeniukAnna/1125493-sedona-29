@@ -9,11 +9,11 @@
 </head>
 <body class="page-body">
 
-<header class="main-header">
+<header class="main-header container">
   <nav class="main-navigation">
-    <a class="main-header-logo">
-      <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Логотип сайта города Седона">
-    </a>
+    <div class="main-header-logo">
+      <img src="img/logo.png" width="138" height="70" alt="Логотип сайта города Седона">
+    </div>
     <ul class="site-navigation">
       <li><a href="">ИНФОРМАЦИЯ</a></li>
       <li><a href="">ФОТО И ВИДЕО</a></li>
@@ -23,20 +23,30 @@
   </nav>
 </header>
 <main class="container">
+  <div class="background-image-index">
+    <img src="img/background-photo.jpg" width="1200" height="509" alt="Каньон">
+  </div>
+  <div class="background-welcome">
+    <img src="img/welcome.png" width="458" height="352" alt="welcome">
+  </div>
   <h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
   <section class="features">
     <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
     <ul class="features-list">
-      <li class="feature-item">
-        <h3>Настоящий городок</h3>
-        <p>— №1 —</p>
-        <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+      <li class="feature-item reason1">
+        <div class="text">
+          <h3>Настоящий городок</h3>
+          <p>— №1 —</p>
+          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
         <img src="img/town.jpg" width="800" height="256" alt="Здание">
       </li>
-      <li class="feature-item">
-        <h3>Там есть Мост дьявола</h3>
-        <p>— №2 —</p>
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      <li class="feature-item reason2">
+        <div class="text">
+          <h3>Там есть Мост дьявола</h3>
+          <p>— №2 —</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
         <img src="img/bridge.jpg" width="800" height="256" alt="Каменный мост">
       </li>
       <li class="feature-item">
@@ -60,15 +70,15 @@
     <ul class="recommendations-list">
       <li class="recommendations-item">
         <h3>ЖИЛЬЁ</h3>
-        <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
+        <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br> МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
       </li>
       <li class="recommendations-item">
         <h3>ЕДА</h3>
-        <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+        <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br> ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
       </li>
       <li class="recommendations-item">
         <h3>СУВЕНИРЫ</h3>
-        <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+        <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО<br> ПРОИЗВОДСТВА!</p>
       </li>
     </ul>
   </section>
@@ -83,10 +93,9 @@
   </section>
   <section class="map">
     <img src="img/map.jpg" width="1199" height="594" alt="Карта">
-    <!--ЗДЕСЬ ДОЛЖНА БЫТЬ КАРТА ИЛИ КАРТИНКА КАРТЫ-->
   </section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer container">
   <section class="footer-phone">
     <h2>#VISITSEDONA</h2>
     <a class="" href="tel:+74956660166">ТЕЛ:+7(495) 666-01-66</a>
