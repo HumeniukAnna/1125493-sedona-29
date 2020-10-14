@@ -166,12 +166,12 @@ img {
   line-height: 21px;
 }
 
-.features-list li:first-child {
+.features-list div:first-child {
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
 
-.features-list li:nth-child(2) {
+.features-list div:nth-child(2) {
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
@@ -186,6 +186,8 @@ img {
 
 .recommendations-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   vertical-align: bottom;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
