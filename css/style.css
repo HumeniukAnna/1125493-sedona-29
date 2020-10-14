@@ -44,12 +44,6 @@ img {
   height: auto;
 }
 
-.container h1 {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  text-align: center;
-}
 
 /*Grid*/
 
@@ -119,6 +113,14 @@ img {
 }
 
 /* Features */
+
+.features h1 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .features h2 {
   font-size: 14px;
   line-height: 26px;
@@ -184,23 +186,26 @@ img {
 
 /* Recommendations */
 
-.recommendations-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  vertical-align: bottom;
+.recommendations {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 256px;
-}
-
-.recommendations-item {
   text-align: center;
+  width: 1200px;
 }
 
 .recommendations-item h3 {
   font-size: 21px;
   line-height: 21px;
+}
+
+.recommendations-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  background-color: var(--basic-white);
+  color: var(--basic-grey);
 }
 
 
@@ -213,6 +218,7 @@ img {
 .find h3 {
   font-size: 30px;
   font-weight: 700;
+  margin-top: 50px;
 }
 
 .find-form {
