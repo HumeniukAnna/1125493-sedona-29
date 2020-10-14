@@ -107,12 +107,7 @@ img {
 
 /*background-image*/
 
-.background-welcome {
-  margin-top: 77px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  z-index: 1;
+.background-image-index {
 }
 
 /*Container*/
@@ -120,7 +115,7 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 /* Features */
@@ -133,7 +128,32 @@ img {
 
 .features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.reason1 {
+  width: 1200px;
+  display: flex;
+}
+
+/*flex-grow?flex-shrink?*/
+
+.reason2 {
+  width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.features-list-gray {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 256px;
 }
 
 .feature-item {
@@ -156,26 +176,10 @@ img {
   background-color: var(--basic-blue);
 }
 
-.features-list li:last-child,
-.features-list li:nth-child(3),
-.features-list li:nth-child(4) {
+.features-list-gray li:first-child,
+.features-list-gray li:nth-child(2),
+.features-list-gray li:nth-child(3) {
   background-color: var(--basic-grey-dark);
-}
-
-.reason1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.reason1:first-child {
-  justify-content: flex-start;
-  flex-grow: 0;
-}
-
-.reason1:last-child {
-  justify-content: flex-end;
-  flex-grow: 1;
 }
 
 /* Recommendations */
@@ -260,6 +264,14 @@ img {
 
 .hotels-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-hotel {
+  height: 27px;
+  width: 110px;
+  display: flex;
 }
 
 .hotels-list p {
