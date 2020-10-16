@@ -41,7 +41,6 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 
@@ -58,15 +57,13 @@ img {
   align-content: start;
 }
 
-/*для грида*/
+/* main navigation*/
 
 .main-header-logo {
   position: absolute;
   left: 50%;
   margin-left: -60px;
 }
-
-/* main navigation*/
 
 .main-navigation {
   font-size: 14px;
@@ -83,6 +80,9 @@ img {
   font-weight: 700;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .site-navigation li {
@@ -192,6 +192,9 @@ img {
   grid-template-rows: 256px;
   text-align: center;
   width: 1200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .recommendations-item h3 {
@@ -200,9 +203,6 @@ img {
 }
 
 .recommendations-item {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   vertical-align: bottom;
   background-color: var(--basic-white);
   color: var(--basic-grey);
