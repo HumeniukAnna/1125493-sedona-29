@@ -338,8 +338,13 @@ img {
 
 .button-hotel {
   height: 27px;
-  width: 110px;
+  width: auto;
   display: flex;
+  display: block;
+}
+
+.button-hotel a {
+  padding: 5px 10px;
 }
 
 .hotels-list p {
