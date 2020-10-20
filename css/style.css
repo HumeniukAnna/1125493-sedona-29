@@ -357,7 +357,9 @@ img {
 .hotel-rating {
   color: var(--basic-grey-medium);
   background-color: var(--basic-grey-light);
-  align-self: center;
+  align-self: flex-end;
+  margin-left: auto;
+  padding: 5px 15px;
 }
 
 /* Footer */
