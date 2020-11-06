@@ -26,7 +26,7 @@
 <main class="page-catalog container">
   <section class="filters">
     <h2 class="visually-hidden">Фильтр жилья</h2>
-    <form class="filter-checkbox">
+    <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="filter-checkbox1">
         <legend>Инфраструктура:</legend>
         <ul>
@@ -61,18 +61,15 @@
             <label for="filter-apartments">Апартаменты</label></li>
         </ul>
       </fieldset>
-    </form>
-    <form class="filter-range" method="get" action="https://echo.htmlacademy.ru">
+      <!--    <fieldset class="filter-range">-->
       <fieldset class="filter-item">
         <legend>Стоимость в сутки (р):</legend>
         <div class="range-filter">
           <div class="price-controls">
-            <label class="min-price">
-              <input type="number" name="min-price" value="от 0">
-            </label>
-            <label class="max-price">
-              <input type="number" name="max-price" value="до 3000">
-            </label>
+            <label class="min-price"></label>
+            <input type="number" name="min-price" placeholder="от 0">
+            <label class="max-price"></label>
+            <input type="number" name="max-price" placeholder="до 3000">
           </div>
           <div class="range-controls">
             <div class="scale">
@@ -82,11 +79,10 @@
             <div class="toggle toggle-max"></div>
           </div>
         </div>
+        <input class="filters-button" type="submit" value="Показать">
       </fieldset>
-      <input class="filters-button" type="submit" value="Показать">
+      <!--    </fieldset>-->
     </form>
-    <!--здесь будет форма для фильтра отелей-->
-    <!--здесь ползунок-->
   </section>
   <section class="search-results-sorting">
     <p class="found">найдено: 3</p>
@@ -102,6 +98,18 @@
         <a class="sorting-item" href="#">по рейтингу</a>
       </li>
     </ul>
+    <div class="sorting-indicator">
+      <p class="icon-up">
+        <svg width="11" height="10" viewBox="0 0 11 10" fill="none">
+          <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+        </svg>
+      </p>
+      <p class="icon-down active-icon">
+        <svg width="11" height="10" viewBox="0 0 11 10" fill="none">
+          <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA"/>
+        </svg>
+      </p>
+    </div>
   </section>
   <section class="search-results-hotels">
     <ul class="hotels-list">
