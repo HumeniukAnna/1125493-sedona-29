@@ -527,7 +527,6 @@ img {
   color: var(--basic-white);
   font-size: 14px;
   line-height: 21px;
-  padding-left: 62px;
 }
 
 .price-controls input {
@@ -538,7 +537,7 @@ img {
   font-size: 14px;
   line-height: 21px;
   text-align: left;
-  margin-right: 10px;
+  margin-right: 22px;
   text-transform: uppercase;
 }
 
@@ -552,7 +551,14 @@ img {
   line-height: 21px;
   margin: 5px 83px;
   padding: 6px 34px;
+}
 
+.min-price {
+  padding-left: 62px;
+}
+
+.max-price {
+  padding-left: 50px;
 }
 
 /*Hotels*/
