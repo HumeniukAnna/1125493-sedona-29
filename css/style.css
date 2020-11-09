@@ -631,6 +631,7 @@ img {
 
 .hotels-list {
   list-style: none;
+  padding: 0;
 }
 
 .hotel-kind {
@@ -662,7 +663,7 @@ img {
 .hotels-list li {
   display: flex;
   border-top: 1px solid var(--basic-grey-special);
-  padding: 25px 30px 30px 30px;
+  padding: 25px 30px 30px 70px;
   height: 95px;
   position: relative;
 }
