@@ -93,27 +93,26 @@ img {
   padding: 15px 70px;
 }
 
-.site-navigation li:first-child a,
-.site-navigation li:nth-child(2) a {
+.site-navigation li:first-child,
+.site-navigation li:nth-child(2) {
   text-align: left;
 }
 
-.site-navigation li:nth-child(2) a {
+.site-navigation li:nth-child(2) {
   padding-left: 30px;
 }
 
-.site-navigation li:last-child a,
-.site-navigation li:nth-child(3) a {
+.site-navigation li:last-child,
+.site-navigation li:nth-child(3) {
   text-align: right;
 }
 
-.site-navigation li:nth-child(3) a {
+.site-navigation li:nth-child(3) {
   padding-right: 30px;
 }
 
 .site-navigation li {
   width: 200px;
-  text-align: center;
 }
 
 .site-navigation li:nth-child(3n) {
@@ -123,7 +122,6 @@ img {
 
 .site-navigation a {
   color: var(--basic-black);
-  display: block;
 }
 
 
@@ -242,7 +240,6 @@ img {
 .text {
   padding: 30px 50px 20px;
 }
-
 
 
 .feature-item h3 {
@@ -402,6 +399,30 @@ img {
   margin: 24px 0;
 }
 
+.filter-input-checkbox:not(:checked):disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 27px;
+  height: 24px;
+  background-image: url("../img/checkbox-off-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked:disabled + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -42px;
+  width: 27px;
+  height: 24px;
+  background-image: url("../img/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .filter-option:last-child {
   padding-bottom: 0;
 }
@@ -410,7 +431,6 @@ img {
   position: relative;
   display: block;
   cursor: pointer;
-  /* курсор? */
 }
 
 .filter-input-checkbox:not(:checked) + label::before {
@@ -467,12 +487,11 @@ img {
 
 .range-controls .scale {
   height: 2px;
-  background: var(--basic-white);
-  opacity: 0.3;
+  background: var(--basic-grey-range);
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 80%;
   height: 2px;
   background: var(--basic-white);
 }
@@ -658,7 +677,6 @@ img {
   margin-left: 0;
   padding-top: 0;
 }
-
 
 
 .hotels-list li {
@@ -1148,7 +1166,7 @@ img {
 }
 
 /*Убрать стрелочки*/
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
