@@ -7,23 +7,21 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<div class="page-body">
-  <div class="shadow container">
-    <header class="main-header container">
-      <nav class="main-navigation">
-        <div class="main-header-logo">
-          <img src="img/logo.png" width="138" height="70" alt="Логотип сайта города Седона">
-        </div>
-        <ul class="site-navigation">
-          <li><a href="">ИНФОРМАЦИЯ</a></li>
-          <li><a href="">ФОТО И ВИДЕО</a></li>
-          <li><a href="">КАРТА ШТАТА</a></li>
+<body class="page-body">
+<div class="shadow container">
+  <header class="main-header container">
+    <nav class="main-navigation">
+      <div class="main-header-logo">
+        <img src="img/logo.png" width="138" height="70" alt="Логотип сайта города Седона">
+      </div>
+      <ul class="site-navigation">
+        <li><a href="">ИНФОРМАЦИЯ</a></li>
+        <li><a href="">ФОТО И ВИДЕО</a></li>
+        <li><a href="">КАРТА ШТАТА</a></li>
           <li><a href="hotel.html">ГОСТИНИЦЫ</a></li>
         </ul>
       </nav>
     </header>
-  </div>
-  <div class="shadow container">
     <main class="container">
       <section class="background-image-index">
         <div class="welcome-photo">
@@ -149,22 +147,22 @@
           </span>
             </p>
             <div class="amount-of-people">
-              <p class="find-form-item">
+              <p class="find-form-item-amount">
                 <label for="grown" class="amount-of-grown">Взрослые:</label>
+                <button type="button" class="minus-grow" aria-label="Минус"></button>
                 <input id="grown" type="number" min="1" value="2">
                 <button type="button" class="plus-grow" aria-label="Плюс"></button>
-                <button type="button" class="minus-grow" aria-label="Минус"></button>
               </p>
-              <p class="find-form-item">
+              <p class="find-form-item-amount">
                 <label for="children" class="amount-of-children">Дети:</label>
+                <button type="button" class="minus-children"></button>
                 <input id="children" type="number" min="0" value="0">
                 <button type="button" class="plus-children"></button>
-                <button type="button" class="minus-children"></button>
               </p>
             </div>
             <div class="button-found-hotels">
               <a class="button-found">Найти</a>
-              <div>
+            </div>
           </form>
         </section>
       </section>
@@ -174,7 +172,6 @@
           width="1199" height="594" allowfullscreen title="Седона, Аризона, США"></iframe>
       </section>
     </main>
-  </div>
 <footer class="page-footer footer-index container">
   <section class="footer-phone">
     <h2>#VISITSEDONA</h2>
@@ -217,5 +214,7 @@
   </a>
   </p>
 </footer>
+</div>
+</body>
 </body>
 </html>
