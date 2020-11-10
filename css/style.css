@@ -19,6 +19,7 @@
   --basic-brown-light: #766357;
   --basic-brown: #604E43;
   --basic-brown-dark: #503E33;
+  --basic-green-light: #bfdeb9;
   --basic-blue: #81B3D2;
   --basic-blue-dark: #669EC0;
   --basic-blue-extra-dark: #5496BD;
@@ -271,7 +272,7 @@ img {
   font-size: 21px;
   line-height: 21px;
   margin: 0;
-  padding-top: 23px;
+  padding-top: 102px;
   padding-bottom: 25px;
 }
 
@@ -286,8 +287,38 @@ img {
   padding: 60px 0 50px;
 }
 
-.recommendations-item:last-of-type {
-  padding: 55px 0 50px;
+.option {
+  position: relative;
+}
+
+.icon-home::after {
+  content: "";
+  position: absolute;
+  bottom: 118px;
+  left: 162px;
+  width: 75px;
+  height: 72px;
+  background-image: url("../img/icon-home.svg");
+}
+
+.icon-eat::after {
+  content: "";
+  position: absolute;
+  bottom: 119px;
+  left: 162px;
+  width: 75px;
+  height: 70px;
+  background-image: url("../img/icon-eat.svg");
+}
+
+.icon-gift::after {
+  content: "";
+  position: absolute;
+  bottom: 118px;
+  left: 168px;
+  width: 64px;
+  height: 77px;
+  background-image: url("../img/icon-gift.svg");
 }
 
 /* find-hotel*/
@@ -1172,6 +1203,15 @@ input::-webkit-inner-spin-button {
 
 .map iframe {
   border: none;
+}
+
+.map {
+  background-color: var(--basic-green-light);
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  color: var(--basic-white);
+  height: 594px;
+  width: 1199px;
 }
 
 .shadow {
