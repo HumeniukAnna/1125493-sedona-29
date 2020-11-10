@@ -295,21 +295,25 @@ img {
 .find {
   line-height: 24px;
   text-align: center;
-  height: 263px;
+  padding-top: 60px;;
+  height: 231px;
   position: relative;
 }
 
-.find h3 {
+.find span {
   font-size: 30px;
   font-weight: 700;
-  padding-top: 31px;
+}
+
+.find-info {
+  margin: 27px;
 }
 
 .find-open-form {
   font-size: 21px;
   font-weight: 700;
   position: absolute;
-  bottom: 30px;
+  bottom: 29px;
   left: 316px;
 }
 
@@ -761,9 +765,12 @@ img {
   align-self: center;
 }
 
-.footer-phone h2 {
+.footer-phone p {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   padding-left: 37px;
 }
 
@@ -933,8 +940,8 @@ img {
 
 .modal {
   position: absolute;
-  top: 263px;
-  left: 315px;
+  top: 292px;
+  left: 316px;
   width: 459px;
   height: 285px;
   padding: 50px 55px 60px;
@@ -953,6 +960,7 @@ img {
   text-transform: uppercase;
   padding: 17px 196px;
   border: none;
+  outline: none;
   color: var(--basic-white);
   background-color: var(--basic-blue);
   cursor: pointer;
@@ -1046,7 +1054,7 @@ img {
 }
 
 .amount-of-children {
-  padding-right: 23px;
+  padding-right: 26px;
   padding-top: 5px;
 }
 
@@ -1054,12 +1062,16 @@ img {
   position: absolute;
   top: 62px;
   right: 64px;
+  border: none;
+  outline: none;
 }
 
 .calendar-arrival {
   position: absolute;
   top: 129px;
   right: 64px;
+  border: none;
+  outline: none;
 }
 
 .calendar-arrival:hover path,
@@ -1079,6 +1091,7 @@ img {
   width: 25px;
   height: 34px;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -1086,6 +1099,7 @@ img {
   width: 25px;
   height: 34px;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -1093,6 +1107,7 @@ img {
   width: 25px;
   height: 34px;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -1100,6 +1115,7 @@ img {
   width: 25px;
   height: 34px;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
