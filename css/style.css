@@ -117,11 +117,9 @@ img {
   margin-left: auto;
 }
 
-
 .site-navigation a {
   color: var(--basic-black);
 }
-
 
 /*background-image*/
 
@@ -196,8 +194,6 @@ img {
   display: flex;
 }
 
-/*flex-grow?flex-shrink?*/
-
 .reason2 {
   width: 1200px;
   max-height: 256px;
@@ -225,20 +221,17 @@ img {
   background-color: var(--basic-grey-dark);
 }
 
-
 .features-list-gray li {
   padding: 30px 0 50px;
 }
 
 .feature-item {
   text-align: center;
-
 }
 
 .text {
   padding: 30px 50px 20px;
 }
-
 
 .feature-item h3 {
   font-size: 21px;
@@ -297,8 +290,8 @@ img {
   padding: 55px 0 50px;
 }
 
-
 /* find-hotel*/
+
 .find {
   line-height: 24px;
   text-align: center;
@@ -342,7 +335,6 @@ img {
 }
 
 /*Filters*/
-
 
 .filters {
   background-color: var(--basic-blue-extra-dark);
@@ -456,13 +448,13 @@ img {
 }
 
 /*Range*/
+
 .filter-item {
   margin: 0;
   padding: 0;
   border: none;
   position: relative;
 }
-
 
 .range-filter {
   width: 320px;
@@ -575,6 +567,7 @@ img {
 }
 
 /*Hotels*/
+
 .search-results-sorting {
   display: flex;
   margin: 10px 10px 15px 70px;
@@ -637,14 +630,12 @@ img {
   line-height: 1px;
 }
 
-
 .hotel-item {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
   font-weight: 700;
 }
-
 
 .hotels-list {
   list-style: none;
@@ -675,7 +666,6 @@ img {
   margin-left: 0;
   padding-top: 0;
 }
-
 
 .hotels-list li {
   display: flex;
@@ -739,7 +729,6 @@ img {
   font-size: 0;
 }
 
-
 .rating-start li {
   padding: 3px;
   width: 19px;
@@ -753,10 +742,6 @@ img {
   background-position: 50% 50%;
 }
 
-
-/*Map*/
-
-
 /* Footer */
 
 .page-footer {
@@ -766,7 +751,6 @@ img {
   justify-content: space-around;
   min-height: 120px;
 }
-
 
 .footer-phone {
   font-weight: 700;
@@ -844,6 +828,7 @@ img {
 }
 
 /*User navigation*/
+
 .site-navigation a:hover,
 .site-navigation a:focus,
 .footer-copyright a:hover,
@@ -879,11 +864,9 @@ img {
   background-color: var(--basic-brown);
 }
 
-/*hotel-book:active?*/
 .find-hotel:active {
   background-color: var(--basic-brown-dark);
 }
-
 
 .button-found:hover,
 .social-button:focus,
@@ -898,7 +881,6 @@ img {
 .social-button:focus {
   background-color: var(--basic-blue-dark);
 }
-
 
 .social-button:hover {
   background-color: var(--basic-blue-extra-dark);
@@ -921,7 +903,6 @@ img {
 .filters-button:hover {
   background-color: var(--basic-white);
   color: var(--basic-black);
-
 }
 
 .icon-up:focus path,
@@ -984,7 +965,6 @@ img {
   grid-template-rows: 67px 67px
 }
 
-
 .find-form-item {
   font-size: 14px;
   line-height: 26px;
@@ -992,7 +972,6 @@ img {
   margin: 0;
   display: grid;
   grid-template-columns: 113px 352px;
-
 }
 
 .find-form-item label {
@@ -1095,13 +1074,13 @@ img {
 }
 
 /*Button plus minus*/
+
 .plus-grow {
   width: 25px;
   height: 34px;
   border: none;
   cursor: pointer;
 }
-
 
 .minus-grow {
   width: 25px;
@@ -1123,7 +1102,6 @@ img {
   border: none;
   cursor: pointer;
 }
-
 
 .minus-grow svg {
   position: absolute;
@@ -1164,6 +1142,7 @@ img {
 }
 
 /*Убрать стрелочки*/
+
 input[type="number"] {
   -moz-appearance: textfield;
 }
