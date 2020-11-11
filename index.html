@@ -5,7 +5,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page-body">
 <div class="shadow container">
@@ -99,7 +99,7 @@
         <form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="find-form-item">
             <label for="arrival-date">Дата заезда:</label>
-            <input id="arrival-date" type="text" name="date" value="24 апреля 2017">
+            <input class="form-arrival-date" id="arrival-date" type="text" name="date" value="24 апреля 2017">
             <button type="button" class="calendar-arrival" tabindex="0" aria-label="выбрать дату заезда">
               <svg aria-hidden="true" focusable="false" width="21" height="23" viewBox="0 0 21 23" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -113,7 +113,7 @@
           </p>
           <p class="find-form-item">
             <label for="departure-date">Дата выезда:</label>
-            <input id="departure-date" type="text" name="date" value="4 июля 2017">
+            <input class="form-departure-date" id="departure-date" type="text" name="date" value="4 июля 2017">
             <button type="button" class="calendar-departure" tabindex="0" aria-label="выбрать дату выезда">
               <svg aria-hidden="true" focusable="false" width="21" height="23" viewBox="0 0 21 23" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -214,7 +214,7 @@
   </footer>
 </div>
 
-<script src="js/form.js"></script>
+<script src="js/form.min.js"></script>
 
 </body>
 </html>

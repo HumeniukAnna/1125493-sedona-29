@@ -1045,7 +1045,6 @@ img {
 }
 
 .find-form-item input:focus,
-.find-form-item button:focus,
 .find-form-item-amount input:focus {
   background-color: var(--basic-white);
   outline: 1px solid var(--basic-grey-special);
@@ -1231,5 +1230,51 @@ input::-webkit-inner-spin-button {
 
 .form-show {
   display: block;
+  animation: bounce 2s;
 }
 
+.form-error {
+  animation: shake 0.7s;
+}
+
+/*Animations*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-15px);
+  }
+
+  70% {
+    transform: translateY(-5px);
+  }
+
+  90% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
