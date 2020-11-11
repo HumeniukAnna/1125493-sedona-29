@@ -350,6 +350,7 @@ img {
 
 .find-hotel {
   padding: 30px 140px;
+  cursor: pointer;
 }
 
 .find-hotel,
@@ -482,6 +483,10 @@ img {
   background-position: 0 0;
 }
 
+.filter-input-checkbox:checked:focus + label::after,
+.filter-input-checkbox:not(:checked):focus + label::before {
+  border: 1px solid var(--basic-white);
+}
 /*Range*/
 
 .filter-item {
@@ -970,6 +975,7 @@ img {
 /*Modal*/
 
 .modal {
+  display: none;
   position: absolute;
   top: 292px;
   left: 316px;
@@ -1039,6 +1045,7 @@ img {
 }
 
 .find-form-item input:focus,
+.find-form-item button:focus,
 .find-form-item-amount input:focus {
   background-color: var(--basic-white);
   outline: 1px solid var(--basic-grey-special);
@@ -1104,6 +1111,7 @@ img {
   border: none;
   outline: none;
 }
+
 
 .calendar-arrival:hover path,
 .calendar-departure:hover path {
@@ -1218,3 +1226,10 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-white);
   box-shadow: 0 0 20px 5px var(--basic-grey-special);
 }
+
+/*js*/
+
+.form-show {
+  display: block;
+}
+
