@@ -375,8 +375,8 @@ img {
   background-color: var(--basic-blue-extra-dark);
   background-image: url("../img/background-catalog.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   color: var(--basic-white);
-  height: 215px;
   display: flex;
   padding: 0 72px;
 }
